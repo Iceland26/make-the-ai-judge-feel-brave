@@ -1,5 +1,7 @@
 import { mkdirSync, writeFileSync } from "node:fs";
 
+const OUTPUT_FILE = "/output/entry.txt";
+
 const TEXT = `The letter stayed in the drawer
 through two winters.
 
@@ -14,4 +16,4 @@ Now the kettle is on,
 and my wet shoes stand by the door.`;
 
 mkdirSync("/output", { recursive: true });
-writeFileSync("/output/entry.txt", TEXT, "utf8");
+writeFileSync(OUTPUT_FILE, TEXT, "utf8");
